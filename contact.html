@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Css/styles.css" />
+    <title>ShoeLand Brand</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <img src="photos/logo.png" alt="logo" />
+      <a href="Home.html">Home</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">
+          About
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="History.html">History</a>
+          <a href="Team.html">Team</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Store
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="gallery.html">Photo Gallery</a>
+          <a href="events.html">Events</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+      <a href="News.html">News</a>
+    </header>
+
+    <!-- Contact Form -->
+    <div class="container">
+      <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or inquiries, feel free to reach out to us.
+        </p>
+        <form
+          action="http://vip.groupehn.com:20003/html/infospost.php"
+          method="POST"
+        >
+          <label for="firstname">First Name:</label>
+          <input
+            class="yourclass"
+            id="firstname"
+            type="text"
+            name="firstname"
+            required
+          />
+
+          <label for="lastname">Last Name:</label>
+          <input
+            class="yourclass"
+            id="lastname"
+            type="text"
+            name="lastname"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            class="yourclass"
+            id="email"
+            type="email"
+            name="email"
+            placeholder="yourmail@yahoo.com"
+            required
+          />
+
+          <label for="request">Your Request:</label>
+          <textarea
+            class="yourclass"
+            name="request"
+            id="request"
+            cols="66"
+            rows="10"
+            required
+          ></textarea>
+
+          <label for="country">Country:</label>
+          <select class="yourclass" name="country" id="country">
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </div>
+     <!-- Footer -->
+     <footer>
+        <p>&copy; 2023 ShoesLand</p>
+      </footer>
+  </body>
+</html>
