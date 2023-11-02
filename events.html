@@ -3,71 +3,153 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <title>Events - ShoesLand</title>
   </head>
   <body>
     <!-- Navbar -->
-    <header class="navbar">
-      <img src="photos/logo.png" alt="logo" />
-      <a href="home.html">Home</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">
+          <img
+            src="photos/logo.png"
+            height="28"
+            alt="ShoeLand"
+            style="margin-right: 50px; margin-left: -25px"
+          />
+        </a>
 
-      <div class="dropdown">
-        <button class="dropbtn">
-          About
-          <i class="fa fa-caret-down"></i>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="dropdown-content">
-          <a href="history.html">History</a>
-          <a href="team.html">Team</a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html" style="color: white">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="history.html"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="color: white"
+              >
+                About
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="aboutDropdown"
+                style="color: white"
+              >
+                <li>
+                  <a class="dropdown-item" href="history.html">History</a>
+                </li>
+                <li><a class="dropdown-item" href="team.html">Team</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="storeDropdown"
+                role-="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="color: white"
+              >
+                Store
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="storeDropdown">
+                <li>
+                  <a class="dropdown-item" href="gallery.html">Photo Gallery</a>
+                </li>
+                <li><a class="dropdown-item" href="events.html">Events</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" style="color: white"
+                >Contact</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="news.html" style="color: white">News</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="dropdown">
-        <button class="dropbtn">
-          Store
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="gallery.html">Photo Gallery</a>
-          <a href="events.html">Events</a>
-        </div>
-      </div>
-      <a href="contact.html">Contact</a>
-      <a href="news.html">News</a>
-    </header>
-
-    <!-- Events Content -->
+    </nav>
+    <!--Content-->
     <div class="container">
       <section class="all-events">
-        <h2>Upcoming Events</h2>
-        <h4>Stay tuned for our exciting upcoming events.</h4>
+        <h2 class="text-center mt-5">Upcoming Events</h2>
+        <h4 class="text-center mt-3 mb-5">
+          Stay tuned for our exciting upcoming events.
+        </h4>
 
-        <!-- Event  1 -->
-        <div class="event">
-          <div class="event-info">
-            <h3>Pop-up Madrid</h3>
-            <span>Date: January 15, 2024</span>
+        <!-- Event 1 -->
+        <div class="row event">
+          <div class="col-md-6 event-info">
+            <h3 class="mt-5">Pop-up Madrid</h3>
+            <p><strong>Date:</strong> January 15, 2024</p>
             <p>
-              <strong> Description : </strong> The Pop-Up Madrid Event is a
-              dynamic and temporary gathering that brings the heart and soul of
-              Madrid to life in a unique way. Located in the vibrant heart of
-              the city, this event showcases a curated selection of local
-              artisans, designers, and culinary delights. It's a celebration of
-              Madrid's rich culture, offering visitors a taste of its arts,
-              crafts, fashion, and cuisine, all in one immersive and lively
-              setting.
+              <strong>Description:</strong> The Pop-Up Madrid Event is a dynamic
+              and temporary gathering that brings the heart and soul of Madrid
+              to life in a unique way. Located in the vibrant heart of the city,
+              this event showcases a curated selection of local artisans,
+              designers, and culinary delights. It's a celebration of Madrid's
+              rich culture, offering visitors a taste of its arts, crafts,
+              fashion, and cuisine, all in one immersive and lively setting.
             </p>
           </div>
-          <img src="photos/madrid.jpg" alt="" />
+          <div class="col-md-6">
+            <img
+              src="photos/madrid.jpg"
+              alt="Pop-up Madrid"
+              class="img-fluid rounded float-end"
+              style="
+                max-width: 100%;
+                height: 400px;
+                width: 500px;
+                border: 1px solid #ccc;
+              "
+            />
+          </div>
         </div>
 
-        <!-- Event  2 -->
-        <div class="event">
-          <div class="event-info">
-            <h3>Pop-up Barcelone</h3>
-            <p>Date: February 20, 2024</p>
+        <!-- Event 2 -->
+        <div class="row event">
+          <div class="col-md-6 event-info">
+            <h3 class="mt-5">Pop-up Barcelona</h3>
+            <p><strong>Date:</strong> February 20, 2024</p>
             <p>
-              <strong> Description : </strong> The Pop-Up Barcelona Event is a
+              <strong>Description:</strong> The Pop-Up Barcelona Event is a
               captivating and temporary experience that captures the essence of
               Barcelona in a one-of-a-kind setting. Nestled in the heart of this
               vibrant Spanish city, the event serves as a showcase for local
@@ -77,16 +159,28 @@
               and interactive atmosphere.
             </p>
           </div>
-          <img src="photos/bcn.jpg" alt="" />
+          <div class="col-md-6">
+            <img
+              src="photos/bcn.jpg"
+              alt="Pop-up Barcelona"
+              class="img-fluid rounded float-end mt-3 mb-3"
+              style="
+                max-width: 100%;
+                height: 400px;
+                width: 500px;
+                border: 1px solid #ccc;
+              "
+            />
+          </div>
         </div>
 
-        <!-- Event  3 -->
-        <div class="event">
-          <div class="event-info">
-            <h3>Paris Fashion Week</h3>
-            <p>Date: April 4, 2024</p>
+        <!-- Event 3 -->
+        <div class="row event">
+          <div class="col-md-6 event-info">
+            <h3 class="mt-5">Paris Fashion Week</h3>
+            <p><strong>Date:</strong> April 4, 2024</p>
             <p>
-              <strong> Description : </strong> Paris Fashion Week is one of the
+              <strong>Description:</strong> Paris Fashion Week is one of the
               most prestigious and anticipated events in the global fashion
               calendar. Held twice a year in the iconic city of Paris, it
               showcases the latest collections from renowned fashion designers
@@ -95,33 +189,52 @@
               set the trends for the upcoming seasons.
             </p>
           </div>
-          <img src="photos/paris.jpg" alt="" />
+          <div class="col-md-6">
+            <img
+              src="photos/paris.jpg"
+              alt="Paris Fashion Week"
+              class="img-fluid rounded float-end"
+              style="
+                max-width: 100%;
+                height: 400px;
+                width: 500px;
+                border: 1px solid #ccc;
+              "
+            />
+          </div>
         </div>
 
-        <!-- Event  4 -->
-
-        <div class="event">
-          <div class="event-info">
-            <h3>Milan Fashion Week</h3>
-            <p>Date: July 4, 2024</p>
+        <!-- Event 4 -->
+        <div class="row event">
+          <div class="col-md-6 event-info">
+            <h3 class="mt-5">Milan Fashion Week</h3>
+            <p><strong>Date:</strong> July 4, 2024</p>
             <p>
-              <strong> Description : </strong> Milano Fashion Week, also known
-              as Milan Fashion Week, is a renowned global event that takes place
+              <strong>Description:</strong> Milano Fashion Week, also known as
+              Milan Fashion Week, is a renowned global event that takes place
               twice a year in Milan, Italy. It is a prominent fixture in the
               fashion calendar, where top Italian and international fashion
               designers present their latest collections to an audience of
               industry professionals, fashion enthusiasts, and celebrities.
               Milano Fashion Week is celebrated for its emphasis on luxury,
-              craftsmanship, and innovation in fashion..
+              craftsmanship, and innovation in fashion.
             </p>
           </div>
-          <img src="photos/mila.jpg" alt="" />
+          <div class="col-md-6">
+            <img
+              src="photos/mila.jpg"
+              alt="Milan Fashion Week"
+              class="img-fluid rounded float-end mt-3 mb-3"
+              style="
+                max-width: 100%;
+                height: 400px;
+                width: 500px;
+                border: 1px solid #ccc;
+              "
+            />
+          </div>
         </div>
       </section>
     </div>
-     <!-- Footer -->
-     <footer>
-        <p>&copy; 2023 ShoesLand</p>
-      </footer>
   </body>
 </html>

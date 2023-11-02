@@ -3,108 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <title>Team - ShoesLand</title>
   </head>
 
   <body>
     <!-- Navbar -->
-    <header class="navbar">
-      <img src="photos/logo.png" alt="logo" />
-      <a href="home.html">Home</a>
-
-      <div class="dropdown">
-        <button class="dropbtn">
-          About
-          <i class="fa fa-caret-down"></i>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">
+          <img src="photos/logo.png" height="28" alt="ShoeLand" style="margin-right: 50px; margin-left: -25px;">
+        </a>
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="dropdown-content">
-          <a href="history.html">History</a>
-          <a href="team.html">Team</a>
+    
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html" style="color: white;">Home</a>
+            </li>
+    
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="history.html" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                About
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown" style="color: white;">
+                <li><a class="dropdown-item" href="history.html">History</a></li>
+                <li><a class="dropdown-item" href="team.html">Team</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="storeDropdown" role-="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                Store
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="storeDropdown">
+                <li><a class="dropdown-item" href="gallery.html">Photo Gallery</a></li>
+                <li><a class="dropdown-item" href="events.html">Events</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" style="color: white;">Contact</a>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link" href="news.html" style="color: white;">News</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="dropdown">
-        <button class="dropbtn">
-          Store
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="gallery.html">Photo Gallery</a>
-          <a href="events.html">Events</a>
-        </div>
-      </div>
-      <a href="contact.html">Contact</a>
-      <a href="news.html">News</a>
-    </header>
-
-    <!-- Page Content -->
+    </nav>
+    
+<!-- Team content -->
     <div class="container">
-      <section class="team-content">
-        <h2>Our Team</h2>
-        <p>Here Are Our Pillars</p>
-
-        <!-- Team  1 -->
-        <div class="team">
-          <div class="team-image">
-            <img class="ceo" src="photos/jiji2.png" alt="team 1" />
+      <!-- Team Section -->
+      <section class="team">
+        <h1 class="text-center mt-5 mb-5">Meet Our Team</h1>
+    
+        <!-- Team Member 1 -->
+        <div class="row team-member border rounded p-3 bg-light">
+          <div class="col-md-4">
+            <div class="team-image text-center">
+              <img class="ceo img-fluid rounded-circle" src="photos/jiji2.png" alt="Team 1" width="200" height="100" />
+            </div>
           </div>
-          <div class="team-details">
-            <h3>CEO</h3>
-            <span class="name">Jawher Landoulssi</span>
-
-            <p>
-              Jawher Landoulssi is the dynamic CEO behindS ShoeLand, known for
-              his visionary leadership and innovative approach to the footwear
-              industry. With a keen eye for fashion trends and a passion for
-              quality craftsmanship, he has successfully steered the company
-              towards global recognition
-            </p>
-          </div>
-        </div>
-
-        <!-- team  2 -->
-        <div class="team">
-          <div class="team-image">
-            <img src="photos/hazem.jpg" alt="team 2" />
-          </div>
-          <div class="team-details">
-            <h3>Team Manager</h3>
-            <span class="name2">Hazem</span>
-            <p>
-              Hazem Landoulssi is a key player in the management team of the
-              shoe brand, contributing to its success in a pivotal role. As a
-              seasoned executive, he brings a wealth of expertise and experience
-              to the company. His dedication to operational excellence and
-              strategic planning has been instrumental in achieving the brand's
-              goals.
-            </p>
+          <div class="col-md-8">
+            <div class="team-details">
+              <h3>CEO</h3>
+              <span class="name font-weight-bold">Jawher Landoulssi</span>
+              <p>
+                Jawher Landoulssi is the dynamic CEO behind ShoeLand, known for his visionary leadership and innovative approach to the footwear industry. With a keen eye for fashion trends and a passion for quality craftsmanship, he has successfully steered the company towards global recognition.
+              </p>
+            </div>
           </div>
         </div>
-
-        <!-- team  3 -->
-
-        <div class="team">
-          <div class="team-image">
-            <img src="photos/sophia.jpeg" alt="team 2" />
+    
+        <!-- Team Member 2 -->
+        <div class="row team-member border rounded p-3 bg-light">
+          <div class="col-md-4">
+            <div class="team-image text-center">
+              <img src="photos/hazem.jpg" alt="Team 2" class="img-fluid rounded-circle" width="200" height="100" />
+            </div>
           </div>
-          <div class="team-details">
-            <h3>Vice President</h3>
-            <span class="name3">Sophia</span>
-
-            <p>
-              Sophia Landoulssi is an invaluable member of the shoe brand's
-              leadership team, serving as the Vice President. Her strategic
-              vision and expertise have significantly contributed to the
-              company's growth and success. With a strong background in
-              marketing and brand development.
-            </p>
+          <div class="col-md-8">
+            <div class="team-details">
+              <h3>Team Manager</h3>
+              <span class="name font-weight-bold">Hazem</span>
+              <p>
+                Hazem Landoulssi is a key player in the management team of the shoe brand, contributing to its success in a pivotal role. As a seasoned executive, he brings a wealth of expertise and experience to the company. His dedication to operational excellence and strategic planning has been instrumental in achieving the brand's goals.
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Team Member 3 -->
+        <div class="row team-member border rounded p-3 bg-light">
+          <div class="col-md-4">
+            <div class="team-image text-center">
+              <img src="photos/sophia.jpeg" alt="Team 3" class="img-fluid rounded-circle" width="200" height="100" />
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="team-details">
+              <h3>Vice President</h3>
+              <span class="name font-weight-bold">Sophia</span>
+              <p>
+                Sophia Landoulssi is an invaluable member of the shoe brand's leadership team, serving as the Vice President. Her strategic vision and expertise have significantly contributed to the company's growth and success. With a strong background in marketing and brand development.
+              </p>
+            </div>
           </div>
         </div>
       </section>
     </div>
-     <!-- Footer -->
-     <footer>
-        <p>&copy; 2023 ShoesLand</p>
-      </footer>
+        
   </body>
 </html>

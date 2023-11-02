@@ -3,59 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <title>History - ShoesLand</title>
   </head>
   <body>
     <!-- Navbar -->
-    <header class="navbar">
-      <img src="photos/logo.png" alt="logo" />
-      <a href="home.html">Home</a>
-
-      <div class="dropdown">
-        <button class="dropbtn">
-          About
-          <i class="fa fa-caret-down"></i>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">
+          <img src="photos/logo.png" height="28" alt="ShoeLand" style="margin-right: 50px; margin-left: -25px;">
+        </a>
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="dropdown-content">
-          <a href="history.html">History</a>
-          <a href="team.html">Team</a>
+    
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html" style="color: white;">Home</a>
+            </li>
+    
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="history.html" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                About
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown" style="color: white;">
+                <li><a class="dropdown-item" href="history.html">History</a></li>
+                <li><a class="dropdown-item" href="team.html">Team</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="storeDropdown" role-="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                Store
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="storeDropdown">
+                <li><a class="dropdown-item" href="gallery.html">Photo Gallery</a></li>
+                <li><a class="dropdown-item" href="events.html">Events</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" style="color: white;">Contact</a>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link" href="news.html" style="color: white;">News</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="dropdown">
-        <button class="dropbtn">
-          Store
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="gallery.html">Photo Gallery</a>
-          <a href="events.html">Events</a>
-        </div>
-      </div>
-      <a href="contact.html">Contact</a>
-      <a href="news.html">News</a>
-    </header>
+    </nav>
 
 <!-- Content -->
-    <div class="container">
-      <section class="history">
-        <h1>History of Our Brand</h1>
+<div class="container">
+  <section class="history">
+    <h1 class="mt-5">History of Our Brand</h1>
 
-        <h2>Early Beginnings and Innovation</h2>
-
+    <div class="column">
+      <div class="col-md-8">
+        <h2 class="mt-5">Early Beginnings and Innovation</h2>
         <p>
           The history of ShoesLand can be traced back to ancient civilizations,
           where footwear served both practical and symbolic purposes. However,
           the concept of our Brand in the footwear industry began to take shape
           in the 19th century with the advent of mass production and the growth
           of global trade. Our iconic brand ShoesLand, founded in 1908, gained
-          popularity with the canvas basketball sneakers, ,focused on crafting
-          rugged work boots for laborers. Thee brand symbolized the shift from
+          popularity with the canvas basketball sneakers, focused on crafting
+          rugged work boots for laborers. The brand symbolized the shift from
           generic, utilitarian shoes to specialized and branded footwear.
         </p>
-
-        <h2>Rise of the Footwear</h2>
-
+      </div>
+      <div class="col-md-8">
+        <h2 class="mt-3">Rise of the Footwear</h2>
         <p>
           Sustainability is a significant trend in the fashion and footwear
           industry. By incorporating eco-friendly materials and manufacturing
@@ -64,17 +86,22 @@
           marketing and branding efforts, appealing to a growing market segment
           focused on eco-friendly products.
         </p>
-        <h2>Satisfacion</h2>
+      </div>
+      <div class="col-md-8">
+        <h2 class="mt-3">Satisfaction</h2>
         <p>
           Regularly collect feedback from our customers and use it to make
           improvements. Act on their suggestions and concerns to enhance product
           quality and customer experience. Satisfied customers are more likely
-          to become loyal advocates for our brand.This diversification and the
+          to become loyal advocates for our brand. This diversification and the
           ever-evolving fashion landscape have made the history of our brand a
-          dynamic and continuously evolving narrative
+          dynamic and continuously evolving narrative.
         </p>
-      </section>
+      </div>
     </div>
+  </section>
+</div>
+
    
   </body>
 </html>
